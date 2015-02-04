@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Open Bazaar Buyer client</title>
+ 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"></link>	 
+	<link rel="stylesheet" href="styles/app.css"></link>
+</head>
+<body>
+	<div class='container' ng-app="app">
+		<div>
+			<header ng-include="'templates/nav.html'"></header>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h2>Bits for Bites</h2>
+				<p>A test store site where users can buy food using bitcoins on the Open Bazaar decentralized marketplace.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div ui-view></div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+		<div class="footer-inner" >
+			<p style="font-size: 15px;text-align:center">
+				© OpenBazaar -
+				<a href="https://creativecommons.org/licenses/by/4.0/">Some rights reserved</a>
+			</p>
+		</div>
+	</footer>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script> 
+	<script type="text/javascript" src="scripts/menu/index.js"></script>
+	<script type="text/javascript" src="scripts/store/index.js"></script>
+	<script type="text/javascript" src="scripts/buyer.js"></script>
+</body>
+</html>

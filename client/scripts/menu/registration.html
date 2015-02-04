@@ -1,0 +1,68 @@
+<div class="row">
+		<div class="well bs-component col-lg-12">
+			<form class="form-horizontal">
+			<fieldset>
+
+			<div ng-keyup="start()">
+
+				<h3>User Registration</h3>
+				<hr />
+
+				<h4>User Details</h4>
+
+				<!-- User Name -->
+				<div class="form-group">
+					<div class="col-lg-3">
+						<label class="control-label">User Name:</label>
+					</div>
+					<div class="col-lg-9">
+						<input type="text" class="form-control " id="user_name" ng-model="name" autocomplete="off" placeholder="Enter your First and Last Name" >
+					</div>
+				</div>
+
+				<!-- Screen Name and Email -->
+				<div class="form-group">
+					<div class="col-lg-3">
+						<label class="control-label">Screen Name:</label>
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control " id="user_handle" ng-model="handle" autocomplete="off" placeholder="Enter a screen name">
+					</div>
+					<div class="col-lg-3">
+						<label class="control-label">Email</label>
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control " id="user_email" ng-model="email" autocomplete="off" placeholder="Enter your email address" >
+					</div>
+				</div>
+				
+				<!-- Email -->
+				<div class="form-group">
+					<div class="col-lg-3">
+						<label class="control-label">Legal Address:</label>
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control" id="street_address" ng-model="street_address" autocomplete="off" placeholder="Enter you Street Address" >
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control" id="cityNstate" ng-model="cityNstate" autocomplete="off" placeholder="City and State" >
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control" id="country" ng-model="country" autocomplete="off" placeholder="Country of Residence" >
+					</div>
+				</div>
+
+				<br />
+				
+				</div> 
+
+					<div>
+						<p></p>
+						<button type="button" ng-click="addUser()" class="btn btn-primary" >Register</button>
+						<br />
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+</div>

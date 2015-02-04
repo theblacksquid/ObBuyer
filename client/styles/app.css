@@ -1,0 +1,75 @@
+label { display: block; }
+
+form.search {
+    float: right;
+    margin: 0;
+}
+
+
+.btn_search, .btn_search:hover {
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    text-indent: -999em;
+    width: 34px;
+    background: url("/images/top_nav_shopping_bag.gif") repeat scroll 0 -80px transparent;
+    
+}
+
+.btn_merge, .btn_merge:hover {
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    text-indent: -999em;
+    width: 34px;
+    background: url("/images/albumLight.jpg") repeat scroll 0 -80px transparent;
+    
+}
+
+.text-input {
+    float: left;
+    font-size: 12px;
+    height: 16px;
+    margin: 0 7px 0 0;
+    width: 170px;
+}
+
+#appAllContent{
+	width: 1000px;
+	height: 1600px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+#appLinks {
+	font: 1em "Trebuchet MS", verdana, arial, sans-serif; 
+	font-size: 100%; 
+	float: left;
+	width: 200px;
+	height: 400px;
+}
+
+#appMain {
+	width: 700px;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	}
+	
+.appPicCenter {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.appPicLeft {
+	position: relative:
+	top: 0;
+	left: 0;
+	display: inline-block;
+}

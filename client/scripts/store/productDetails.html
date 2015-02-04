@@ -1,0 +1,26 @@
+
+<div class="row" ng-controller='ProductController'>
+	<div class="col-sm-6 col-md-8 main" align="center">
+	<div class="row">
+		<h3> {{selectedTitle}}</h3>
+		<img src="{{ selectedProduct.imageurl }}"></img>
+		<h3></h3>
+	</div>
+	<div class="row">
+		<button ng-click="cart({{selectedProduct.contractId}})">Add To Cart</button>
+		<button ng-click="purchase({{selectedProduct.contractId}}")>Purchase</button>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4 sidebar align="left">
+	<h3>Description</h3>
+	<p>Gourmet Appertizer for the most discerning palate.</p>
+	<p>{{selectedProduct.description}}</p>
+	<ul>
+	<li>BTC: {{selectedProduct.btc}}</li>
+	<li>FIAT: {{selectedProduct.fiat.price}} {{selectedProduct.fiat.currency}}</li>
+	<li>Condition: {{selectedProduct.condition}}</li>
+	<li>Estimated Delivery: {{selectedProduct.estimated_delivery}}</li>
+	</ul>
+	</div>
+</div>
+<div ui-view ></div>

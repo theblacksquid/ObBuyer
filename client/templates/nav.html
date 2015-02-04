@@ -1,0 +1,58 @@
+<div class="container-fluid">
+	<div class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://openbazaar.org">OpenBazaar</a>
+        </div>		
+		<div class="collapse navbar-collapse">
+            <form class="navbar-form navbar-right">
+            	<input type="text" class="form-control" placeholder="Search">
+            </form>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+ 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+ 					<ul class="dropdown-menu">
+ 						<li><a ui-sref="login">Login</a></li>
+ 						<li><a ui-sref="logout">Logout</a></li>
+ 						<li><a ui-sref="register">Register</a></li>
+ 					</ul>
+ 				</li>
+				<li><a ui-sref="cart">Cart</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+ 				<li class="dropdown">
+ 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+ 					<ul class="dropdown-menu">
+ 						<li><a ui-sref="home">Merchant and Ratings</a></li>
+ 						<li><a ui-sref="home">Open Bazaar</a></li>
+ 						<li><a ui-sref="home">Contracts</a></li>
+ 						<li><a ui-sref="home">Shipping and Handling</a></li>
+ 					</ul>
+ 				</li>
+				<li><a ui-sref="products">Catalog</a></li>
+				<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contracts <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#" ng-click="toggle2()">Buy contract</a></li>
+					<li><a href="#" ng-click="toggle4()">Fund escrow</a></li>
+					<li><a href="#" ng-click="toggle6()">Release funds to merchant</a></li>
+				</ul>
+				</li>
+				<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Bazaar <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#" ng-click="toggle2()">Bought contracts</a></li>
+					<li><a href="#" ng-click="toggle4()">Escrow funding</a></li>
+					<li><a href="#" ng-click="toggle6()">Released funds</a></li>
+				</ul>
+				</li>
+				<li><a ui-sref="support">Support</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

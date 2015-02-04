@@ -1,0 +1,15 @@
+<div ng-controller='MerchantController as merchant' class="container">
+<div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+		<h3>Appertizers</h3>
+		<ul class="nav nav-sidebar" ng-repeat="product in merchant.products">
+			<li>
+				<div><a ng-href="#/store/{{product.title}}">{{product.title}}</a></div>
+			</li>
+		</ul>
+	</div>
+	<div class="col-sm-9 col-md-10 main">
+		<div ui-view></div>
+	</div>
+</div>
+</div>
